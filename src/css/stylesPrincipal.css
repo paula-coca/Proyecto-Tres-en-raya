@@ -24,8 +24,6 @@
     color: #f0f0f0;
     font-family: 'Game Over', sans-serif;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-    position: relative;
-    overflow: hidden;
 }
 
 h1 {
