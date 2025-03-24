@@ -24,6 +24,13 @@ body{
     background-size: cover;
 }
 
+h1 {
+    color: rgb(179, 133, 98);
+    text-shadow: 2px 2px 4px black;
+    border: 2px 2px 2px black;
+    letter-spacing: 3px;
+}
+
 .tarjeta {
     display: flex;
     flex-direction: column;
@@ -64,17 +71,18 @@ body{
 
 #resultados{
     max-width: fit-content;
-    color: white;
+    color: black;
     font-size: 2rem;
     font-weight: 1000;
 }
 
 button {
     padding: 12px 25px;
+    font-family: 'Stoke', sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
     background: url('../assets/images/madera.jpg');
-    color: white;
+    color: rgb(0, 0, 0);
     border: 2px solid #d4af37;
     cursor: pointer;
     border-radius: 8px;
