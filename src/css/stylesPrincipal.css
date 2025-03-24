@@ -67,6 +67,7 @@ h2 {
     font-weight: bold;
     font-size: 3rem;
     letter-spacing: 3px;
+    width: 14rem;
 }
 
 .style-btn:hover {
@@ -87,10 +88,20 @@ h2 {
 
 .uncharted-btn {
     background-color: var(--beige-background);
-    border: 2px solid var(--beige-background);
+    border: 2px solid white;
     color: white;
 }
 
 .uncharted-btn:hover {
     background-color:#faf6a4;
+}
+
+.footer {
+    text-align: center; /* Centra el texto */
+    color: #ecf0f1; /* Texto claro */
+    padding: 10px 20px; /* Espaciado interno */
+    margin-top: 5rem;
+    font-size: 1rem; /* Tamaño del texto */
+    font-family: 'Arial', sans-serif; /* Tipografía */
+    border-top: 2px solid black; /* Línea superior */
 }
