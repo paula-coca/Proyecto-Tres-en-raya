@@ -1,0 +1,94 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Game Over', sans-serif;
+    src: url('../assets/fonts/game_over/game_over.ttf') format('truetype');
+}
+
+:root {
+    --beige-background: #d6af7a;
+}
+
+.index-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #767676;
+    color: #f0f0f0;
+    font-family: 'Game Over', sans-serif;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 7rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+header img {
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 40px;
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+#seleccion-estilo {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.style-btn {
+    padding: 15px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s;
+    text-transform: uppercase;
+    font-family: 'Game Over', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
+
+.style-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+.classic-btn {
+    background-color: black;
+    border: 2px solid #f0f0f0;
+    color: white;
+}
+
+.classic-btn:hover {
+    background-color: rgb(183, 183, 183);
+}
+
+.uncharted-btn {
+    background-color: var(--beige-background);
+    border: 2px solid var(--beige-background);
+    color: white;
+}

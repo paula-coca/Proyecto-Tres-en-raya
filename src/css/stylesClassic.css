@@ -1,0 +1,129 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Stoke', sans-serif;
+    src: url('./fonts/DM_Sans\,Dancing_Script\,Stoke/Stoke/Stoke-Regular.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body{    
+    font-family: 'Stoke', sans-serif;
+    box-sizing: border-box;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url('../assets/images/wallpaperClase.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: url('../assets/images/madera.jpg');
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#juego{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.tablero{
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; 
+    /* gap: 5px;  Espaciado entre celdas */
+    background: url('../assets/images/tableroTiza.jpg');
+    background-size: cover;
+}
+
+.casilla{
+    align-items: center;
+    color: white;
+    /*background-color: rgb(250, 246, 246);*/
+    height: 9vh;
+    width: 9vh;
+    border: px solid;
+}
+
+#resultados{
+    max-width: fit-content;
+    color: white;
+    font-size: 2rem;
+    font-weight: 1000;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: url('../assets/images/madera.jpg');
+    color: white;
+    border: 2px solid #d4af37;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+button:hover {
+    background-color: #98724b;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(212, 175, 55, 0.5);
+    border-color: #ffd700;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+#titulo {
+    font-family: 'Stoke', sans-serif;
+    font-weight: 800;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .tarjeta{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #juego{
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        max-width: 600px;
+        background-color: aquamarine;
+        margin: 5%;
+    }
+    #turnos{
+        background-color: blue;
+        margin-left: auto;
+    }
+    
+    #resultados{
+        background-color: blueviolet;
+    }
+
+    
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tres en Raya</title>
+    <link rel="stylesheet" href="./src/css/stylesUncharted.css"/>
+</head>
+<body class="uncharted">
+    <header>
+        <h1>Tres en Raya</h1>
+    </header>
+    <section id="juego">
+        <div class="tablero">
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+        </div>
+        <aside class="turnoSiguiente">Turno de X</aside>
+    </section>
+    <section id="resultados">
+        <p>Contador de victorias</p>
+        <div id="numVictorias">
+            <div id="victoriasX"><h3></h3></div>
+            <div id="victoriasO"><h3></h3></div>
+        </div>
+    </section>
+    <div id="buttons">
+        <button id="atras">Atrás</button>
+        <button id="reiniciar">Reiniciar</button>
+    </div>
+    
+    <script src="./src/js/game.js"></script>
+</body>
+</html>
